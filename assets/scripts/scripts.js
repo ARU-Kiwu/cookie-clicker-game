@@ -135,7 +135,7 @@ factoryUpgrade.addEventListener('click', () => {
     returnValue('factoryUpgradeCounter', factoryUpgradeCount);
     clickCount -= 1000;
     returnValue('cookieCount', clickCount);
-    cps += 50;
+    cps += 100;
     returnValue('counter-per-second', cps);
     upgradeBuySound();
   } else alert("Insufficient Cookies");
@@ -144,7 +144,7 @@ factoryUpgrade.addEventListener('click', () => {
 function startAutoIncrementfactoryUpgrade() {
   autoIncrementInterval = setInterval(() => {
     if (factoryUpgradeCount >= 1) {
-      clickCount += 50*factoryUpgradeCount;
+      clickCount += 100*factoryUpgradeCount;
       updateClickCount();
     }
   }, 1000);
@@ -164,7 +164,7 @@ bankUpgrade.addEventListener('click', () => {
     returnValue('bankUpgradeCounter', bankUpgradeCount);
     clickCount -= 10000;
     returnValue('cookieCount', clickCount);
-    cps += 100;
+    cps += 1000;
     returnValue('counter-per-second', cps);
     upgradeBuySound();
   } else alert("Insufficient Cookies");
@@ -173,7 +173,7 @@ bankUpgrade.addEventListener('click', () => {
 function startAutoIncrementbankUpgrade() {
   autoIncrementInterval = setInterval(() => {
     if (bankUpgradeCount >= 1) {
-      clickCount += 100*bankUpgradeCount;
+      clickCount += 1000*bankUpgradeCount;
       updateClickCount();
     }
   }, 1000);
@@ -193,7 +193,7 @@ templeUpgrade.addEventListener('click', () => {
     returnValue('templeUpgradeCounter', templeUpgradeCount);
     clickCount -= 100000;
     returnValue('cookieCount', clickCount);
-    cps += 1000;
+    cps += 10000;
     returnValue('counter-per-second', cps);
     upgradeBuySound();
   } else alert("Insufficient Cookies");
@@ -202,7 +202,7 @@ templeUpgrade.addEventListener('click', () => {
 function startAutoIncrementtempleUpgrade() {
   autoIncrementInterval = setInterval(() => {
     if (templeUpgradeCount >= 1) {
-      clickCount += 1000*templeUpgradeCount;
+      clickCount += 10000*templeUpgradeCount;
       updateClickCount();
     }
   }, 1000);
@@ -223,7 +223,7 @@ spaceUpgrade.addEventListener('click', () => {
     returnValue('spaceUpgradeCounter', spaceUpgradeCount);
     clickCount -= 1000000;
     returnValue('cookieCount', clickCount);
-    cps += 10000;
+    cps += 100000;
     returnValue('counter-per-second', cps);
     upgradeBuySound();
   } else alert("Insufficient Cookies");
@@ -232,7 +232,7 @@ spaceUpgrade.addEventListener('click', () => {
 function startAutoIncrementspaceUpgrade() {
   autoIncrementInterval = setInterval(() => {
     if (spaceUpgradeCount >= 1) {
-      clickCount += 10000*spaceUpgradeCount;
+      clickCount += 100000*spaceUpgradeCount;
       updateClickCount();
     }
   }, 1000);
