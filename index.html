@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cookie Clicker Game</title>
+        <link rel="stylesheet" href="assets/stylesheet/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500;600&family=Noto+Color+Emoji&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="left-section">
+                <div class="header">
+                    <div class="header-wrapper">
+                        <div class="cookie-section">
+                            <p>Cookies</p>
+                            <span id="cookieCount">0</span>
+                        </div>
+
+                        <div class="cps-section">
+                            <p id="counter-per-second">0</p>
+                            <span class="counter-text"> cps</span>
+                        </div>
+
+                    </div>
+                </div>
+                <button id="clickButton" onclick="cookieClickSound()"></button>
+            </div>
+            <div class="right-section">
+                <div id="magicCookieUpgrade" class="upgrade">
+                    <div class="upgrade-header">
+                        <p class="icon">🍪</p>
+                        <p>Magic Cookie</p>
+                    </div>
+                    <p>10 cookies <br> 1 cps</p>
+                    <span id="magicCookieUpgradeCount">0</span>
+                </div>
+                <div class="upgrade" id="grandmaUpgrade">
+                    <div class="upgrade-header">
+                        <p class="icon">👵</p>
+                        <p>Grandma</p>
+                    </div>
+                    <p>50 cookies <br> 5 cps</p>
+                    <span id="grandmaUpgradeCount">0</span>
+                </div>
+                <div id="farmUpgrade" class="upgrade">
+                    <div class="upgrade-header">
+                        <p class="icon">🌿</p>
+                        <p>Farm</p>
+                    </div>
+                    <p>250 cookies <br> 25 cps</p>
+                    <span id="farmUpgradeCounter">0</span>
+                </div>
+                <div id="factoryUpgrade" class="upgrade">
+                    <div class="upgrade-header">
+                        <p class="icon">🏭</p>
+                        <p>Factory</p>
+                    </div>
+                    <p>1000 cookies <br> 50 cps</p>
+                    <span id="factoryUpgradeCounter">0</span>
+                </div>
+                <div class="upgrade" id="bankUpgrade">
+                    <div class="upgrade-header">
+                        <p class="icon">🏦</p>
+                        <p>Bank</p>
+                    </div>
+                    <p>10 000 cookies <br> 100 cps</p>
+                    <span id="bankUpgradeCounter">0</span>
+                </div>
+                <div class="upgrade" id="templeUpgrade">
+                    <div class="upgrade-header">
+                        <p class="icon">🛕</p>
+                        <p>Temple</p>
+                    </div>
+                    <p>100 000 cookies <br> 1000 cps</p>
+                    <span id="templeUpgradeCounter">0</span>
+                </div>
+                <div class="upgrade" id="spaceUpgrade">
+                    <div class="upgrade-header">
+                        <p class="icon">🚀</p>
+                        <p>Space</p>
+                    </div>
+                    <p>1 milion cookies <br> 10 000 cps</p>
+                    <span id="spaceUpgradeCounter">0</span>
+                </div>
+                <div class="upgrade" id="galaxyUpgrade">
+                    <div class="upgrade-header">
+                        <p class="icon">🌌</p>
+                        <p>Cookie Galaxy</p>
+                    </div>
+                    <p>10 milion cookies <br> 100 000 cps</p>
+                    <span id="galaxyUpgradeCounter">0</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>This website is made by <a href="https://github.com/ARU-Kiwu"
+                    target="_blank">ARU-Kiwu</a></p>
+        </footer>
+        <div id="victoryScreen">
+            <div>
+                <h2>Thank You For Playing!</h2>
+                <button id="continuePlaying" onclick="buttonClickSound()">Continue Playing</button>
+                <a href="https://github.com/ARU-Kiwu" target="_blank"><button
+                        onclick="buttonClickSound()">GitHub</button></a>
+            </div>
+        </div>
+        <audio src="assets/sounds/mixkit-game-click-1114.wav" id="buy-sound"></audio>
+        <audio src="assets/sounds/mixkit-interface-click-1126.wav"
+            id="click-sound"></audio>
+        <audio src="assets/sounds/level-win-6416.mp3" id="victorySound"></audio>
+        <audio src="assets/sounds/rclick-13693.mp3" id="buttonClickSound"></audio>
+        <script src="assets/scripts/scripts.js"></script>
+    </body>
+
+</html>

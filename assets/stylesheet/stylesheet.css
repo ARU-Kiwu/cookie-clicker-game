@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Grandstander', cursive;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+}
+
+.left-section {
+    background: linear-gradient(rgb(25, 120, 158), rgba(36, 183, 247, 0.801));
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-section button {
+    height: 350px;
+    width: 350px;
+    border:none;
+    background: url('images/cookie.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+
+}
+
+.left-section button:active {
+    animation: cookieAnimation 0.1s ease-out;
+}
+
+.right-section {
+    flex: 1;
+    background-color: transparent;
+    padding-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(45, 48, 47, 0.397);
+    padding: 20px;
+}
+
+.header .header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.header span {
+    margin-top: 10px;
+}
+
+@keyframes cookieAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.97) rotate(1deg);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    75% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.right-section {
+    background: linear-gradient(rgb(217, 252, 247), rgb(141, 197, 250));
+    border-left: 10px solid #26637B;
+}
+
+.upgrade {
+    display: flex;
+    font-family: 'Grandstander', cursive;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(88, 144, 197);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.upgrade-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+    font-size: 25px;
+    
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.upgrade span {
+    margin-right: 15px;
+    padding: 25px;
+    background-color: rgb(0, 27, 150);
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(141, 197, 250);
+    width: 100%;
+    height: 4vh;
+    border-top: 1vh solid #26637B;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #173541;
+}
+
+#counter-per-second {
+    margin-top: 10px;
+    font-size: 18px;
+    padding:0 5px;
+}
+
+.counter-text {
+    display: inline;
+    font-size: 18px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cookie-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cps-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#victoryScreen{
+    display: none;
+    position: absolute;
+    width:100%;
+    height:100%;
+    border-radius: 50px;
+    top:0;
+    left:0;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#victoryScreen div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #173541;
+    padding: 100px;
+    border-radius: 20px;
+}
+
+#victoryScreen button {
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    margin:15px;
+    padding:10px 20px;
+    background-color: white;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0px 5px rgb(207, 207, 207);
+}
+
+#victoryScreen button:active {
+    animation:buttonAnimation 0.2s ease-in-out;
+}
+
+@keyframes buttonAnimation {
+    0%{box-shadow: 0px 5px rgb(207, 207, 207);}
+    50%{box-shadow: none;
+    transform: translateY(5px);}
+    100%{box-shadow: 0px 5px rgb(207, 207, 207);}
+}
+
+@media only screen and (max-width: 900px) {
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+    }
+
+    .left-section {
+        width:100%;
+    }
+
+    .right-section {
+        width:100%;
+        border:none;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .left-section button {
+        height: 250px;
+        max-width: 250px;
+        border: none;
+        background: url('images/cookie.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+    } 
+  }
