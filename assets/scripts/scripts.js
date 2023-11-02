@@ -1,4 +1,4 @@
-let clickCount = 20000000;
+let clickCount = 0;
 let cps = 0;
 const CPS = document.getElementById('counter-per-second');
 const clickButton = document.getElementById('clickButton');
