@@ -1,7 +1,7 @@
 # This is my first ever JavaScript Project 
 
 ## Disclaimer
-This project was made before ever learning how to code with JavaScript. For this one I used the help of AI. I am planing on rebuilding this on the future with the knoledge that I have gathered along.
+This project was made before ever learning how to code with JavaScript. For this one I used the help of AI. I am planing on rebuilding this on the future with the knowledge that I have gathered along.
 You can see the project [here](https://aru-kiwu.github.io/cookie-clicker-game/).
 
 ## A little bit about this project
